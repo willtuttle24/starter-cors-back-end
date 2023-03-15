@@ -11,7 +11,7 @@ router
 
 router
   .route("/")
-  .get(controller.list)
+  .get(cors (), controller.list)
   .post(controller.create)
   .all(methodNotAllowed);
 
